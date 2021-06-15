@@ -1,0 +1,9 @@
+name: spacyner
+channels:
+  - defaults
+dependencies:
+  - python=3
+  - anaconda
+  - spacy==2.1.3
+  - python-crfsuite
+prefix: C:\Users\xnoha\miniconda3\envs\spacyner

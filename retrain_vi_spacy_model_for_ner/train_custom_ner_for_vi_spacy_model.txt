@@ -1,0 +1,13 @@
+#python 3.7 with spacy 2.2.4
+#https://blog.codecentric.de/en/2020/11/ner-cli-custom-named-entity-recognition-with-spacy-in-four-lines/
+#https://github.com/VinAIResearch/PhoNER_COVID19
+
+python -m spacy convert --converter ner data/word/train_word.conll data/spacy
+python -m spacy convert --converter ner data/word/test_word.conll data/spacy
+python -m spacy convert --converter ner data/word/dev_word.conll data/spacy
+
+python -m spacy debug-data vi data/spacy/train_word.json data/spacy/dev_word.json -p ner -b vi_spacy_model
+
+python -m spacy train vi models/vi_spacy_model_ner data/spacy/train_word.json data/spacy/dev_word.json --base-model vi_spacy_model --pipeline 'ner' -R -n 20
+
+python -m spacy evaluate models/vi_spacy_model_ner/model-best data/spacy/dev_word.json
