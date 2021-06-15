@@ -21,3 +21,6 @@ vi_spacy_model/vi_spacy_model-0.2.1/vocab/key2row
 vi_spacy_model/vi_spacy_model-0.2.1/vocab/lexemes.bin
 vi_spacy_model/vi_spacy_model-0.2.1/vocab/strings.json
 vi_spacy_model/vi_spacy_model-0.2.1/vocab/vectors
+vi_spacy_model/vi_spacy_model-0.2.1/ner/cfg
+vi_spacy_model/vi_spacy_model-0.2.1/ner/model
+vi_spacy_model/vi_spacy_model-0.2.1/ner/moves
