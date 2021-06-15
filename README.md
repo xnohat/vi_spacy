@@ -1,12 +1,14 @@
 # Spacy 3.x
 Due to space limitation, our new repository is here: https://gitlab.com/trungtv/vi_spacy
 
+# vi_spacy RETAINED with dataset from VinAI PhoNER for add NER component to model - xnohat https://github.com/xnohat/vi_spacy/
+
 # vi_spacy (UPDATED, WORK for SPACY Verson > 2.1!!!)
 vi_spacy contains Vietnamese models for spaCy. We trained word2vec on a combination of wikipedia and news corpus, vector size = 128. Pos tagger and DEP parser are trained on UD Vietnamese (http://universaldependencies.org/treebanks/vi/index.html)
 ## Installation 
 1. Download vivi model directly using pip:
 ```bash 
-pip install https://github.com/trungtv/vi_spacy/raw/master/packages/vi_spacy_model-0.2.1/dist/vi_spacy_model-0.2.1.tar.gz
+pip install https://github.com/xnohat/vi_spacy/raw/master/retrain_vi_spacy_model_for_ner/dist/vi_spacy_model-0.2.1.tar.gz
 ```
 
 2. You may need to install pyvi 
